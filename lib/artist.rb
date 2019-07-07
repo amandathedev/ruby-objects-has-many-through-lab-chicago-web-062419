@@ -27,6 +27,13 @@ class Artist
   def genres
     songs.map do |song|
       song.genre
+      # genres
     end
   end
 end
+
+GRiZ = Artist.new("GRiZ")
+# p GRiZ.name
+Pretty_Lights = Artist.new("Pretty Lights")
+# p Pretty_Lights.name
+p Artist.all

@@ -29,4 +29,16 @@ class Doctor
       appointment.patient
     end
   end
+
+#   def self.most_appointments
+#     @@all.max_by do |appointment|
+#       appointment.doctor.count
+#     end
+#     p most_appointments
+#   end
 end
+
+lucy = Doctor.new("Lucy")
+p lucy
+jim = Doctor.new("Jim")
+p Doctor.all

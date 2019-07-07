@@ -1,7 +1,7 @@
 require "pry"
 
 class Genre
-  attr_accessor :name, :artist, :genre
+  attr_accessor :name, :genre
 
   @@all = []
 
@@ -25,4 +25,20 @@ class Genre
       song.artist
     end
   end
+
+  # def self.most_songs
+  #   Song.all.max_by do |genre|
+  #     binding.pry
+  #     song.genre.count
+  #   end
+  #   p most_songs
+  # end
+
+
 end
+
+Funk = Genre.new("Funk")
+# p Funk.name
+Electro = Genre.new("Electro")
+# p Genre.most_songs
+p Genre.all
